@@ -39,7 +39,7 @@ void insert(struct TrieNode *root, string str,string meaning)
     }
 
     // mark last node as leaf and add meaning
-    pCrawl->isPresent = 1;
+    pCrawl->isPresent = 10;
     pCrawl->meaning = meaning;
 }
 
