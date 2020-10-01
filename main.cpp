@@ -153,7 +153,7 @@ int main()
     insert(root, "compassion", "meaning of helping");
     insert(root, "combustion", "the process of burning something");
     vector<string>history;
-    cout<<"------------------------------\n";
+    
     cout<<"  Welcome to ABC Dictionary\n";
     cout<<"------------------------------\n\n";
     //Loop until user enters "no"
@@ -170,7 +170,7 @@ int main()
             history.push_back(input);
             cout<<ans<<endl<<endl;
         }
-        //Query not found
+        
         else
         {
             //Suggestions are being printed
@@ -195,14 +195,14 @@ int main()
             }
         }
         string his;
-        //Ask to print history
+        
         cout<<"Do you want to check history?\n";
         cin>>his;
         //Print history if available
         if(his=="yes")
         {
             if(history.size()==0)
-                cout<<"\nNo history available\n";
+                cout<<"\n No history available \n";
             else
             {
                 cout<<"\nSEARCH HISTORY:\n";
@@ -213,13 +213,13 @@ int main()
             }
         }
         cout<<endl;
-        //Clear suggestions for next query
-        suggestions.clear();
+     
         //Ask to search another query
         cout<<"Do you want to search other word?\n";
         cin>>ch;
-    }while(ch=="yes");
-    //Exit dictionary
-    cout<<"\nTHANK YOU FOR USING ABC DICTIONARY";
+        
+    }
+    while(ch=="yes");
+    
     return 0;
 }
